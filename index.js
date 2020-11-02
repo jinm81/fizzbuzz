@@ -10,27 +10,34 @@
 //   }
 // }
 
-// const str = " hello";
-// let newStr = "";
-// for (let i = str.length - 1; i >= 0; i--) {
-//   newStr += str[i];
-// }
-// console.log(newStr);
+const str = " hello";
+let newStr = "";
+for (let i = str.length - 1; i >= 0; i--) {
+  newStr += str[i];
+}
+console.log(newStr);
 
-// const msg = "Hello im learning to be a web developer";
-// const newstr = msg.split(" ").reverse().join().replace(/,/g, " ");
+const msg = "Hello im learning to be a web developer";
+const newstr = msg.split(" ").reverse().join().replace(/,/g, " ");
 
-// console.log(newstr);
+console.log(newstr);
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const largestNumber = (values) => {
-  let highest = 0;
-  for (let i = 0; i < values.length; i += 1) {
-    if (values[i] > highest) {
-      highest = values[i];
-    }
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let max = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] >= max) {
+    max = arr[i];
+   console.log('setting max to ' + max);
   }
-  return highest;
-};
+}
+console.log(max);
+let min = arr[0];
 
-console.log(largestNumber(numbers));
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] <= min) {
+    min = arr[i];
+   console.log('setting min to ' + min);
+  }
+}
+console.log(min);
